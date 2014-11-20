@@ -1,0 +1,146 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shoppinglist.EnterDetails" >
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/name"
+        android:textStyle="bold" />
+    
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint"
+    	android:inputType="textCapWords"/>
+    
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/name_input"
+        android:text="@string/gender" 
+        android:textStyle="bold"/>
+
+    <RadioGroup 
+        android:id="@+id/genderGroup"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/gender"
+    	android:layout_toEndOf="@+id/gender"
+    	android:layout_below="@+id/name_input"
+    	android:layout_marginTop="22dp"
+    	android:layout_marginLeft="25dp"
+    	android:layout_marginStart="25dp"
+    	android:orientation="horizontal">
+    	<RadioButton android:id="@+id/male"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/genderMale"/>
+    	<RadioButton android:id="@+id/female"
+    		android:layout_marginLeft="25dp"
+    		android:layout_marginStart="25dp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="@string/genderFemale"/>
+	</RadioGroup>
+	
+    <TextView
+        android:id="@+id/job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/genderGroup"
+        android:text="@string/jobTitle" 
+        android:textStyle="bold"/>
+    
+    <Spinner
+    	android:id="@+id/jobSpinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/job"
+    	android:layout_toEndOf="@+id/job"
+    	android:layout_below="@+id/genderGroup" 
+    	android:layout_marginTop="10dp"/>
+    
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/jobSpinner"
+        android:text="@string/ageTitle" 
+        android:textStyle="bold"/>
+    
+    <Spinner
+    	android:id="@+id/ageSpinner"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/job"
+    	android:layout_toEndOf="@+id/job"
+    	android:layout_below="@+id/jobSpinner" 
+    	android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/spendingMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/age"
+        android:text="@string/spendingMoneyTitle" 
+        android:textStyle="bold"/>
+    
+    <EditText
+        android:id="@+id/spendingMoneyInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/spendingMoney"
+        android:layout_toEndOf="@+id/spendingMoney"
+        android:layout_below="@+id/ageSpinner"
+        android:hint="@string/hint"
+    	android:inputType="number"/>
+    
+    <TextView
+        android:id="@+id/emailAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/spendingMoney"
+        android:text="@string/emailAddrTitle" 
+        android:textStyle="bold"/>	
+        
+	<EditText
+        android:id="@+id/emailAddrInput"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/emailAddr"
+        android:layout_toEndOf="@+id/emailAddr"
+        android:layout_below="@+id/spendingMoneyInput"
+        android:hint="@string/hint"
+        android:layout_marginTop="16dp"
+    	android:inputType="textEmailAddress"/>   
+    	
+	<Button 
+	    android:id="@+id/continueButton"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+	    android:text="@string/continueTitle"
+	    android:layout_below="@+id/emailAddrInput"
+	    android:layout_marginTop="16dp"
+	    android:textStyle="bold"/>
+    	
+</RelativeLayout>

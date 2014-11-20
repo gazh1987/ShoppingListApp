@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<string-array name="artist">
+        	<item>The Beatles</item>
+        	<item>David Bowie</item>
+        	<item>Peter Gabriel</item>
+        	<item>Jimi Hendrix</item>
+        	<item>Interpol</item>
+        	<item>Kurt Vile</item>
+        	<item>Led Zeppelin</item>
+        	<item>Pearl Jam</item>
+        	<item>REM</item>
+        	<item>Bob Dylan</item>
+    	</string-array>
+    	
+    	<string-array name="album">
+        	<item>Abbey Road</item>
+        	<item>The Next Day</item>
+        	<item>So</item>
+        	<item>Axix: Bold As Love</item>
+        	<item>Antics</item>
+        	<item>Waking On A Pretty Daze</item>
+        	<item>III</item>
+        	<item>Vs.</item>
+        	<item>Monster</item>
+        	<item>Blonde On Blonde</item>
+    	</string-array>
+    	
+    	<string-array name="price">
+        	<item>9.99</item>
+        	<item>13.99</item>
+        	<item>4.99</item>
+        	<item>15.99</item>
+        	<item>9.99</item>
+        	<item>13.99</item>
+        	<item>7.99</item>
+        	<item>7.99</item>
+        	<item>4.99</item>
+        	<item>9.99</item>
+    	</string-array>
+    	
+    	<string-array name="quantity">
+        	<item>0</item>
+        	<item>1</item>
+        	<item>2</item>
+        	<item>3</item>
+        	<item>4</item>
+        	<item>5</item>
+        	<item>6</item>
+        	<item>7</item>
+        	<item>8</item>
+        	<item>9</item>
+        	<item>10</item>
+    	</string-array>
+</resources>
