@@ -91,7 +91,6 @@
         <item>65</item>
     </string-array>
 	
-    <!-- Row.xml -->
      <string name="desc">Description</string>
      
 </resources>

@@ -47,35 +47,8 @@
         android:layout_marginRight="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginTop="1dp"
-        android:textSize="15sp">
+        android:textSize="18sp">
     </TextView>
     
-    <TextView 
-        android:id="@+id/quantity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/amount"
-        android:layout_toStartOf="@+id/amount"
-        android:layout_marginRight="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/price"
-        android:text="@string/quantity"
-        android:textSize="12sp">
-    </TextView>
     
-    <EditText
-        android:inputType="number"
-        android:id="@+id/amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_below="@+id/price"
-        android:text="@string/amount"
-        android:textSize="12sp">
-    </EditText>
 </RelativeLayout>

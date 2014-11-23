@@ -12,7 +12,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -126,7 +125,6 @@ public class ListScreen extends ListActivity implements View.OnClickListener
 		
 			//Create a new Album object based on the users selection
 			Albums a = new Albums(artist[position], album[position], Float.parseFloat(p[position]));
-			
 			
 			//Add the album object created to the shopping cart list
 			shoppingCart.add(a);
