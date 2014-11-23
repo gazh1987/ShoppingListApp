@@ -4,6 +4,13 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
+    <!-- REFERENCE: The following code is from -->  
+	<!-- http://stackoverflow.com/questions/16421706/how-do-you-send-mail-in-android-using-javamail-api -->
+	
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <!-- REFERENCE Complete -->
+    
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="19" />
@@ -29,6 +36,23 @@
         <activity
             android:name=".Checkout"
             android:label="@string/checkout">
+        </activity>
+        
+
+        <activity
+            android:name=".FinalScreen"
+            android:label="@string/checkout">
+            
+            <!-- REFERENCE: The following code is from -->  
+			<!-- http://stackoverflow.com/questions/4732184/how-to-finish-an-android-application -->
+			
+            <intent-filter>
+        		<action android:name="android.intent.action.VIEW"/>
+     			<category android:name="android.intent.category.DEFAULT" />
+     		</intent-filter>
+     		
+     		<!-- Reference Complete -->
+        
         </activity>
     </application>
 

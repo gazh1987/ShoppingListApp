@@ -16,6 +16,9 @@ public class Albums implements Parcelable
 		this.price = p;
 	}
 	
+	//REFERENCE: This code is taken from 
+	//http://blog.denevell.org/android-parcelable.html
+	
 	public static final Parcelable.Creator<Albums> CREATOR = new Parcelable.Creator<Albums>() 
 	{
 		public Albums createFromParcel(Parcel in) 
@@ -35,6 +38,8 @@ public class Albums implements Parcelable
 		this.album = in.readString();
 		this.price = in.readFloat();
 	}
+	
+	//Reference Complete
 	
 	//Getters
 	public String GetArtist()
@@ -56,6 +61,9 @@ public class Albums implements Parcelable
 		return 0;
 	}
 
+	//REFERENCE: This code is taken from 
+	//http://blog.denevell.org/android-parcelable.html
+	
 	@Override
 	public void writeToParcel(Parcel dest, int flags) 
 	{
@@ -63,4 +71,6 @@ public class Albums implements Parcelable
 		dest.writeString(album);
 		dest.writeFloat(price);
 	}
+	//REFERENCE complete
+	
 }

@@ -17,6 +17,9 @@ public class User implements Parcelable
 		this.emailAddress = emailAddress;
 	}
 	
+	//REFERENCE: This code is taken from 
+	//http://blog.denevell.org/android-parcelable.html
+	
 	public static final Parcelable.Creator<User> CREATOR = new Parcelable.Creator<User>() 
     {
 		public User createFromParcel(Parcel in) 
@@ -36,6 +39,8 @@ public class User implements Parcelable
         this.spendingMoney = in.readFloat();
         this.emailAddress = in.readString();
     }
+    
+    //REFERENCE complete
 	
 	public String GetName()
 	{
@@ -62,7 +67,10 @@ public class User implements Parcelable
 	{
 		return 0;
 	}
-
+	
+	//REFERENCE: This code is taken from 
+	//http://blog.denevell.org/android-parcelable.html
+	
 	@Override
 	public void writeToParcel(Parcel dest, int flags) 
 	{
@@ -71,4 +79,6 @@ public class User implements Parcelable
 		dest.writeString(emailAddress);
 		
 	}
+	
+	//REFERENCE complete
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+	        android:contentDescription="@string/desc"
+	        android:id="@+id/logo"
+	        android:layout_centerHorizontal="true"
+	        android:layout_width="200dp"
+	        android:layout_height="200dp"
+	        android:src="@drawable/logo" />
+	    
+	    <TextView
+	        android:id="@+id/confirmationInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="25dp"
+	        android:layout_below="@+id/logo"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/confirmationInfo"
+	        android:textStyle="bold" />
+	    
+	    <TextView
+	        android:id="@+id/thankyou"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_below="@+id/confirmationInfo"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/thankyou"
+	        android:textStyle="bold" />
+	    
+	    <Button 
+		    android:id="@+id/_return"
+		    android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+		    android:text="@string/_return"
+		    android:layout_below="@+id/thankyou"
+		    android:layout_marginTop="16dp"
+		    android:textStyle="bold"/>
+
+</RelativeLayout>

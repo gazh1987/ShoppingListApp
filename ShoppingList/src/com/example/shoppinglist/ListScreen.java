@@ -98,6 +98,7 @@ public class ListScreen extends ListActivity implements View.OnClickListener
 		{
 			Intent intent = new Intent (ListScreen.this, Checkout.class);
 			intent.putExtra("shoppingCart", shoppingCart);
+			intent.putExtra("user", user);
 			startActivity(intent);
 		}
 		else

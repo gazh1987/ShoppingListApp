@@ -6,11 +6,11 @@
     <string name="checkout">Receipt</string>
     <string name="quantity">Quantity: </string>
     <string name="amount">0</string>
-    
+    <string name="purchase">Purchase Items</string>
+    <string name="thankyou">Thank you for shopping at CD WORLD!!</string>
     <string name="preVat">Pre Vat:</string>
     <string name="vat">Vat @21%:</string>
     <string name="totalPrice">Total Price:</string>
-    <color name="green_color">#8fd44a</color>
     <string name="continueCheckout">Continue To Checkout</string>
     <string name="list_screen_name">Albums</string>
     <string name="album_info_name">Album Information</string>
@@ -28,6 +28,11 @@
 	<string name="genderMale">Male</string>
 	<string name="genderFemale">Female</string>
 	<string name="hint">click to enter details</string>
+	<string name="desc">Description</string>
+	<string name="_return">Return To Enter Details Screen</string>
+	<string name="confirmationInfo">A receipt has been emailed to you.</string>
+	
+	<color name="green_color">#8fd44a</color>
 	
 	<string-array name="jobs_array">
         <item>Software Engineer</item>
@@ -90,7 +95,5 @@
         <item>64</item>
         <item>65</item>
     </string-array>
-	
-     <string name="desc">Description</string>
      
 </resources>
