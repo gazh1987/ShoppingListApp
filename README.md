@@ -1,3 +1,4 @@
 ShoppingListApp
 ===============
-20/11/2014: This works
+
+A android application demonstrating basic native android functionality (Lists, Intents... etc)
